@@ -45,6 +45,7 @@ public class ToDoListServlet extends HttpServlet {
         System.out.println("mytask list service called now.");
 
 
+        //dispecer - cere ce sa faca
         HttpSession session = request.getSession(true);
         String action = request.getParameter(ACTION);
 
@@ -69,9 +70,16 @@ public class ToDoListServlet extends HttpServlet {
 
         // call db
 
+        //voi pune inloc de MOCK tabelul din DB
         MyListOfToDoMock myListObject = MyListOfToDoMock.getInstance();
         myListObject.printList();
         List<ToDoBean> l = myListObject.getList();
+
+
+        // voi face o metoda care sa aduca DB
+        // 1. sa faca ..... true
+        // 2. sa faca ..... false (vezi login)
+
 
         // put the list in a json
         JsonObjectBuilder jObjBuilder = Json.createObjectBuilder();

@@ -42,6 +42,6 @@ function addTask() {
     $.ajax({
         url: 'items?action=add&value='+toDoText
     }).done(function (response) {
-        location.href = "todolist.html";
+        location.href = "index.html";
     });
 }

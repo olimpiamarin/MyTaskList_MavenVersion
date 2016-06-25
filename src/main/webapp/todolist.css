@@ -4,3 +4,52 @@
 #listOfTasks ul {
     list-style: none;
 }
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+
+}
+
+div {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
+
+ul {
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+
+a {
+    background-color: #af6796; /* roz */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
